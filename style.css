@@ -1,0 +1,132 @@
+.mt-1 {
+		  margin-top: 1em;
+		}
+
+		i.open-menu {
+			border-radius: 50%;
+			padding: 0.5em;
+		}
+
+		ul li a:hover {
+		  color: gray;
+		}
+
+		ul#menu {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 5em 0em 0em 0em;
+		}
+
+		.no-padding {
+		  padding: 0 !important;
+		}
+
+		ul#menu li {
+		  color: white;
+		  padding: 0.5em;
+		  border-bottom: 1px solid lightgray;
+		}
+
+		ul#menu li a {
+		  color: black;
+		  cursor: pointer;
+		  font-family: 'Roboto Condensed', sans-serif;
+		  font-size: 1.5em;
+		}
+
+
+		span.centered-title {
+			position: absolute;
+			width: 100vw;
+			text-align: center;
+			color: black;
+			font-size: 1.5em;
+			left: 0;
+			top: 0.5em;
+			font-family: 'Roboto Condensed', sans-serif;
+			z-index: 8;
+		}
+
+		.menu-wrapper {
+		  background-color: white;
+		  height: 100vh;
+		  width: 100vw;
+		  position: absolute;
+		  left: 0;
+		  overflow-y: auto;
+		  top: -100%;
+		  transition: 0.4s ease-in all;
+		}
+
+		.menu-wrapper.open {
+		  top: 0;
+		  transition: 0.4s ease-in all;
+		}
+
+
+
+		.close-menu , .close-submenu {
+		  position: absolute;
+		  left: 0.75em;
+		  top: 0.5em;
+		  border: none;
+		  font-size: 1.5em;
+		  background-color: transparent;
+		  color: black;
+		  z-index: 9;
+		}
+
+		.sub-dropdown-menu-wrapper {
+		  left: -100%;
+		  transition: 0.4s ease-in all;
+		  background: white;
+		  position: fixed;
+		  z-index: 99;
+		  top: 0;
+		  height: 100vh;
+		  overflow-y: auto;
+		}
+
+		.sub-dropdown-menu-wrapper.open {
+		  left: 0;
+		}
+
+		ul.sub-dropdown-menu {
+		  list-style-type: none;
+		  margin : 0;
+		  padding: 5em 0em 0em 0em;
+		}
+
+		span.show-dropdown {
+		  position: absolute;
+		  right: 0em;
+		  font-weight: bolder;
+		  font-size: 1.25em;
+		  top: 0.25em;
+		  padding: 0.5em 1em;
+		  color: black;
+		  cursor: pointer;
+		}
+
+		.freeze {
+		  overflow-y: hidden;
+		}
+
+		@media screen and (max-width: 550px) {
+			i.open-menu {
+				border-radius: 50%;
+				padding: 0.5em;
+				margin-left: 0;
+				font-size: 1.5em;
+				margin-top: 0.5em;
+			}
+
+			.close-menu, .close-submenu {
+				border: 1px solid black;
+				padding: 0.5em;
+				border-radius: 50%;
+				font-size: 1.5em;
+				width: 40px;
+				box-shadow: 2px 8px 11px -7px black;
+			}
+		}
