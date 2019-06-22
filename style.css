@@ -80,7 +80,7 @@
 		  left: -100%;
 		  transition: 0.4s ease-in all;
 		  background: white;
-		  position: fixed;
+		  position: fixed !important;
 		  z-index: 99;
 		  top: 0;
 		  height: 100vh;
