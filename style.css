@@ -105,6 +105,7 @@ span.show-dropdown {
 
 .freeze {
   overflow-y: hidden;
+  display: none !important;
 }
 
 
@@ -118,10 +119,10 @@ i.open-menu {
 }
 
 .close-menu, .close-submenu {
-	border: 1px solid black;
-	padding: 0.5em;
-	border-radius: 50%;
-	font-size: 1.5em;
-	width: 40px;
-	box-shadow: 2px 8px 11px -7px black;
+  border: 1px solid black;
+  padding: 0.5em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 40px;
+  box-shadow: 2px 8px 11px -7px black;
 }
