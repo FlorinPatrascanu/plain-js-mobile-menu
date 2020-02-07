@@ -86,6 +86,11 @@ span.centered-title {
   left: 0;
 }
 
+.menu-wrapper.open.freeze ,
+.sub-dropdown-menu-wrapper.open.freeze {
+  height: 0;
+}
+
 ul.sub-dropdown-menu {
   list-style-type: none;
   margin : 0;
