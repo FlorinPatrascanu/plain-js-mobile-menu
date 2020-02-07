@@ -93,6 +93,10 @@ ul.sub-dropdown-menu {
   height: 100vh;
 }
 
+ul.sub-dropdown-menu li:last-child {
+  margin-bottom: 5em;
+}
+
 span.show-dropdown {
   position: absolute;
   right: 0em;
