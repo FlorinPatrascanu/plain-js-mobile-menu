@@ -209,6 +209,7 @@ const addClassMulti = (classes , el) => {classes.forEach(function(_class) {el.cl
 // render menu
 Menu("ul#menu" , payload.menu);
 
+let body = document.querySelector('body');
 let closeMenu = document.querySelector('.close-menu');
 let openMenu = document.querySelector('.open-menu');
 let menu = document.querySelector('.menu-wrapper');
@@ -218,10 +219,12 @@ let dropdownWrappers = document.querySelectorAll('.sub-dropdown-menu-wrapper');
 
 // events
 closeMenu.addEventListener('click' , (e) => {
+	body.classList.remove('freeze');
 	menu.classList.remove('open');
 } , false);
 
 openMenu.addEventListener('click' , (e) => { 
+	body.classList.add('freeze');
 	menu.classList.add('open');
 } , false);
 
