@@ -8,8 +8,8 @@ ul li a:hover {
 
 ul#menu {
   list-style-type: none;
-  margin: 0;
-  padding: 5em 0em 0em 0em;
+  padding: 0;
+  margin-top: 5em;
   height: 100vh;
 }
 
@@ -88,8 +88,8 @@ span.centered-title {
 
 ul.sub-dropdown-menu {
   list-style-type: none;
-  margin: 0;
-  padding: 5em 1em 0em 1em;
+  padding: 0;
+  margin-top: 5em;
   height: 100vh;
 }
 
