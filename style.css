@@ -12,6 +12,7 @@ ul#menu {
   padding: 5em 2em 0em 0em;
   height: 100vh;
   width: 100vw;
+  margin-bottom: 5em;
 }
 
 .no-padding {
@@ -93,8 +94,7 @@ ul.sub-dropdown-menu {
   padding: 5em 1em 0em 1em;
   height: 100vh;
   width: 100vw;
-  position: absolute;
-  left: 0;
+  margin-bottom: 5em;
 }
 
 ul.sub-dropdown-menu li:last-child {
