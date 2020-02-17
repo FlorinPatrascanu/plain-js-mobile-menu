@@ -10,7 +10,7 @@ ul#menu {
   list-style-type: none;
   padding: 0;
   margin-top: 5em;
-  height: 100vh;
+  height: inherit;
 }
 
 .no-padding {
@@ -45,7 +45,7 @@ span.centered-title {
 
 .menu-wrapper {
   background-color: white;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed !important;
   left: -100%;
@@ -90,7 +90,7 @@ ul.sub-dropdown-menu {
   list-style-type: none;
   padding: 0;
   margin-top: 5em;
-  height: 100vh;
+  height: 100%;
 }
 
 ul.sub-dropdown-menu li:last-child {
