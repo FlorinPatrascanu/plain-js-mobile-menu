@@ -9,10 +9,10 @@ ul li a:hover {
 ul#menu {
   list-style-type: none;
   margin: 0;
-  padding: 5em 0em 0em 0em;
+  padding: 5em 0em 0em 1em;
   height: inherit;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   left: 0;
   z-index: 999;
 }
