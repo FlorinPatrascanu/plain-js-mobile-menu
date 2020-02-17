@@ -24,7 +24,7 @@ ul#menu li {
 }
 
 ul#menu li a {
-  color: black;
+  color: white;
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5em;
@@ -44,7 +44,7 @@ span.centered-title {
 }
 
 .menu-wrapper {
-  background-color: white;
+  background-color: black;
   height: 100%;
   width: 100vw;
   position: fixed !important;
@@ -67,14 +67,14 @@ span.centered-title {
   border: none;
   font-size: 1.5em;
   background-color: transparent;
-  color: black;
+  color: white;
   z-index: 9;
 }
 
 .sub-dropdown-menu-wrapper {
   left: -100%;
   transition: 0.4s ease-in all;
-  background: white;
+  background: black;
   position: fixed !important;
   z-index: 99;
   top: 0;
@@ -123,7 +123,7 @@ i.open-menu {
 }
 
 .close-menu, .close-submenu {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 0.5em;
   border-radius: 50%;
   font-size: 1.5em;
