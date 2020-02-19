@@ -136,28 +136,27 @@ i.open-menu {
 
 .category--wrapper {
   position: absolute;
-  top: 1.65%;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2em;
-  width: 90vw;
-  text-align: center;
+  width: 96%;
   font-weight: bold;
   text-decoration: underline;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2.5em;
 }
 
 @media screen and (max-width: 768px) {	
   .category--wrapper.smaller--text--on--mobile {
-	  font-size: 1.25em;
-	  top: 2.75%;
+	  font-size: 4vw;
+	  padding-left: 3.5em;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .category--wrapper {
-    text-align: right;
-  }
-	
+@media screen and (max-width: 400px) {	
   .category--wrapper.smaller--text--on--mobile {
-	  font-size: 1em;
+	font-size: 3vw;
   }
 }
