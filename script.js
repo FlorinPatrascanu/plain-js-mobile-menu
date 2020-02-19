@@ -243,7 +243,7 @@ for (var i = 0; i < openDropdowns.length ; i++) {
 			let category = document.createElement("span");
 			category.setAttribute("class" , "");
 			category.innerHTML = current.parentNode.querySelector(".title a").textContent;
-			current.parentNode.querySelector(".title a").textContent.length > 20 ? addClassMulti(["category--wrapper" , "smaller--text--on--mobile"] , category) : addClassMulti(["category--wrapper"] , category);
+			addClassMulti(["category--wrapper" , "smaller--text--on--mobile"] , category);
 			current.parentNode.querySelector(".close-submenu").after(category);
 		} else {
 			current.parentNode.querySelector(".close-submenu").querySelector(".category--wrapper").remove();
