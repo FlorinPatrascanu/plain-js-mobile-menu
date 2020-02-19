@@ -230,18 +230,30 @@ openMenu.addEventListener('click' , (e) => {
 
 for (var i = 0; i < openDropdowns.length ; i++) {
 	openDropdowns[i].addEventListener('click' , (e) => {
-        e.currentTarget.nextElementSibling.classList.add('open');
-        // never freeze the main menu-wrapper
-        // if(!e.currentTarget.parentNode.parentNode.parentNode.classList.contains('menu-wrapper')){
-        //	e.currentTarget.parentNode.parentNode.parentNode.classList.add('freeze');
-        // }
-        e.currentTarget.parentNode.parentNode.parentNode.classList.add('freeze');
-        
-  } , false)
+		let current = e.currentTarget;
+		current.nextElementSibling.classList.add('open');
+		// never freeze the main menu-wrapper
+		// if(!e.currentTarget.parentNode.parentNode.parentNode.classList.contains('menu-wrapper')){
+		//	e.currentTarget.parentNode.parentNode.parentNode.classList.add('freeze');
+		// }
+		current.parentNode.parentNode.parentNode.classList.add('freeze');
+
+		// create / recreate category header
+		if(current.parentNode.querySelector(".close-submenu").querySelector(".category--wrapper") == null) {
+			let category = document.createElement("span");
+			category.setAttribute("class" , "");
+			category.innerHTML = current.parentNode.querySelector(".title a").textContent;
+			current.parentNode.querySelector(".title a").textContent.length > 35 ? addClassMulti(["category--wrapper" , "smaller--text--on--mobile"] , category) : addClassMulti(["category--wrapper"] , category);
+			current.parentNode.querySelector(".close-submenu").after(category);
+		} else {
+			current.parentNode.querySelector(".close-submenu").querySelector(".category--wrapper").remove();
+		}
+
+	} , false)
 }
 
 for (var i = 0; i < closeDropdowns.length ; i++) {
-	closeDropdowns[i].addEventListener('click' , (e) => {
+  closeDropdowns[i].addEventListener('click' , (e) => {
         e.currentTarget.parentNode.classList.remove('open');
         e.currentTarget.parentNode.parentNode.parentNode.parentNode.classList.remove('freeze');
         // scroll back to the top of the previous sub menu when closing the current one
