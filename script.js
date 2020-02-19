@@ -238,15 +238,17 @@ for (var i = 0; i < openDropdowns.length ; i++) {
 		// }
 		current.parentNode.parentNode.parentNode.classList.add('freeze');
 
+		let category = document.createElement("span");
+		category.setAttribute("class" , "");
+		category.innerHTML = current.parentNode.querySelector(".title a").textContent;
+		addClassMulti(["category--wrapper" , "smaller--text--on--mobile"] , category);
+
 		// create / recreate category header
-		if(current.parentNode.querySelector(".close-submenu").querySelector(".category--wrapper") == null) {
-			let category = document.createElement("span");
-			category.setAttribute("class" , "");
-			category.innerHTML = current.parentNode.querySelector(".title a").textContent;
-			addClassMulti(["category--wrapper" , "smaller--text--on--mobile"] , category);
-			current.parentNode.querySelector(".close-submenu").after(category);
+		if(current.parentNode.querySelector(".close-submenu").parentNode.querySelector(".category--wrapper") === null) {
+		  current.parentNode.querySelector(".close-submenu").after(category);
 		} else {
-			current.parentNode.querySelector(".close-submenu").querySelector(".category--wrapper").remove();
+		  current.parentNode.querySelector(".close-submenu").parentNode.querySelector(".category--wrapper").remove();
+		  current.parentNode.querySelector(".close-submenu").after(category);
 		}
 
 	} , false)
