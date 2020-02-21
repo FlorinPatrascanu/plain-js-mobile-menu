@@ -175,3 +175,13 @@ i.open-menu {
 	font-size: 3.5vw;
   }
 }
+
+@media screen and (max-width: 550px) {
+  ul#menu li a {
+    font-size: 1em;
+  } 
+	
+  span.show-dropdown {
+    top: 0;
+  }
+}
