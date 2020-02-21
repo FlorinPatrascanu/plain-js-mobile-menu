@@ -48,16 +48,30 @@ span.centered-title {
   height: 100%;
   width: 100vw;
   position: fixed !important;
-  left: -100%;
+  left: 0;
+  transform: translate3d(-100vw , 0 , 0);
+  -moz-transform: translate3d(-100vw , 0 , 0);
+  -o-transform: translate3d(-100vw , 0 , 0);
+  -ms-transform: translate3d(-100vw , 0 , 0);
   overflow-y: auto;
-  transition: 0.4s ease-in all;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .menu-wrapper.open {
-  left: 0;
-  transition: 0.4s ease-in all;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  transform: translate3d(0, 0 , 0);
+  -moz-transform: translate3d(0, 0 , 0);
+  -o-transform: translate3d(0, 0 , 0);
+  -ms-transform: translate3d(0, 0 , 0);
 }
-
 
 
 .close-menu , .close-submenu {
@@ -72,18 +86,34 @@ span.centered-title {
 }
 
 .sub-dropdown-menu-wrapper {
-  left: -100%;
-  transition: 0.4s ease-in all;
+  left: 0;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   background: black;
   position: fixed !important;
   z-index: 99;
   top: 0;
   height: 100vh;
   overflow-y: auto;
+  transform: translate3d(-100vw , 0 , 0);
+  -moz-transform: translate3d(-100vw , 0 , 0);
+  -o-transform: translate3d(-100vw , 0 , 0);
+  -ms-transform: translate3d(-100vw , 0 , 0);
 }
 
 .sub-dropdown-menu-wrapper.open {
-  left: 0;
+  transform: translate3d(0, 0 , 0);
+  -moz-transform: translate3d(0, 0 , 0);
+  -o-transform: translate3d(0, 0 , 0);
+  -ms-transform: translate3d(0, 0 , 0);
+    -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 ul.sub-dropdown-menu {
